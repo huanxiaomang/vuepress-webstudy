@@ -1,4 +1,6 @@
-
+---
+lastUpdated: true
+---
 
 # 前端速通教程
 

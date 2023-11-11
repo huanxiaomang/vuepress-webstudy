@@ -4,8 +4,15 @@ import { searchPlugin } from '@vuepress/plugin-search'
 export default defineUserConfig({
     lang: 'zh-CN',
     title: '创智前端学习资源库',
-    description: '前端学习',
+    description: '前端速通学习 幻小芒的笔记',
+    head: [
+        ['link', { rel: 'shortcut icon', href: '/images/favicon.ico' }],
+        ['meta', { name: 'author', content: '幻小芒' }],
+        ['meta', { name: 'keywords', content: '幻小芒 前端学习 速通教程 前端学习方法 创智前端学习资源库' }],
+    ],
     theme: defaultTheme({
+        lastUpdated: true,
+        lastUpdatedText: '最后更新',
         navbar: [
             {
                 text: '常用网站',
