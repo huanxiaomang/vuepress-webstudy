@@ -2,6 +2,7 @@ import { defaultTheme, defineUserConfig } from 'vuepress';
 import { searchPlugin } from '@vuepress/plugin-search'
 
 export default defineUserConfig({
+    base: '/vuepress-webstudy/',
     lang: 'zh-CN',
     title: '创智前端学习资源库',
     description: '前端速通学习 幻小芒的笔记',
