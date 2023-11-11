@@ -4,6 +4,8 @@ npm run docs:build
 
 cd docs/.vuepress/dist
 
+echo 'huanxm.cn' > CNAME
+
 git init
 git add -A
 git commit -m 'deploy'
