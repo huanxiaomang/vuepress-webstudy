@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-0a55442e","path":"/course/main/%E6%96%B0%E6%89%8B%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E7%AF%87.html","title":"","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1701011048000,"contributors":[{"name":"huanxiaomang","email":"atri2022@163.com","commits":1}]},"filePathRelative":"course/main/新手常见问题篇.md"}');export{a as data};
