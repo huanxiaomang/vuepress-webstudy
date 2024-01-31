@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as p,Q as a}from"./chunks/framework.e5c343f4.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"course/教学大纲.md","filePath":"course/教学大纲.md"}'),r={name:"course/教学大纲.md"},s=a("",11),o=[s];function l(i,_,c,n,h,d){return t(),p("div",null,o)}const u=e(r,[["render",l]]);export{m as __pageData,u as default};
