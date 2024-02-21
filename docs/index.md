@@ -34,7 +34,7 @@ features:
 
 
 <script setup>
-if (!window.created) {
+if (!window.created && document.body.clientWidth >= 750) {
     createImage();
 }
 window.created = true;
