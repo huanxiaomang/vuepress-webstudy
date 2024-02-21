@@ -57,7 +57,6 @@ push之前要pull最新的过来，处理冲突
 
 如果本地的版本落后于远程的版本，则报错：
 
-![image-20240221122937714](C:\Users\15500\AppData\Roaming\Typora\typora-user-images\image-20240221122937714.png)
 
 
 
