@@ -22,7 +22,7 @@ docs_folders.map((dir) => {
 
     mds.map((md) => {
         const content = readFileSync(resolve(__dirname, `./../docs/${dir}/${md}`)).toString();
-        let result = content.match(/(\!\[image-\d+\]\(.*\))|(<img.*src=.*alt.*zoom.*>)/gm);
+        let result = content.match(/(\!\[image-\d+\]\(.*\))|(<img.*src=.*>)/gm);
         console.log(blueBright('检查 ') + md);
         if (result !== null) {
             result.map((item) => {
