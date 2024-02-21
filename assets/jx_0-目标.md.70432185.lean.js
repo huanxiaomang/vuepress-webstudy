@@ -1,1 +1,0 @@
-import{_ as l,o as i,c as e,Q as t}from"./chunks/framework.caffda30.js";const h=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"jx/0-目标.md","filePath":"jx/0-目标.md","lastUpdated":null}'),o={name:"jx/0-目标.md"},s=t("",6),_=[s];function n(r,a,p,c,d,u){return i(),e("div",null,_)}const f=l(o,[["render",n]]);export{h as __pageData,f as default};
