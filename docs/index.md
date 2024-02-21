@@ -19,16 +19,50 @@ hero:
 
 features:
   - icon: 🪴
-    details: 现在已经不是看一堆视频有知识量就能入职的时代了，真正优秀的工程师只占10%，那么互联网上90%的抱怨你还有必要去听吗？
+    details: 熟悉git操作、分支创建、处理冲突、合并等，多人协作开发。
   - icon: 👨‍👩‍👧‍👦
-    details: 在你没到那个水平、那个境界的时候不要去死扣，扣也没用，而应该去学习更多知识点、练习更多写法、学习更多程序设计的思想、提高自己的境界。
+    details: 使用vue3+ts完成项目开发，掌握vue3常用语法、与typescript的简单结合、学会组件化开发的思想。
   - icon: 🛠️
-    details: 很多知识点不是说听一遍讲解跟视频敲一遍就会了的，之后该忘还是会忘，只有在实战中自发的使用这些方法，才会真正记住、理解他们。
+    details: 使用vue3生态：vue-router、pinia等，学会使用elementUIplus组件库构建各种常用页面布局。
   - icon: 💻
-    details: 努力不必多说，充分利用学习资源，有合理的学习方法和不断提高的学习能力，还有兴趣驱使，再把有效时间堆起来，技术一定会飞快提升。
+    details: 掌握node常用的库，理解前端工程化。使用node完成JWT，做中间层，对前端请求做拦截。
   - icon: 🌐
-    details: 学习路线是知识点串联的，不是说前面没全学懂就 不能学后面的了，也不是说到后面学完框架就是进阶的了，更不是说进阶的工程师不会再去做前面所谓“基础”的东西了。
+    details: 掌握优秀的开发思想、编程习惯，理解模块化、DRY原则与KISS原则等。
   - icon: 🌍
-    details: 这一堆话单独拿出来有点成功学的感觉（?
+    details: 冲大厂！╰（￣▽￣）╭ 
 ---
 
+
+<script setup>
+if (!window.created) {
+    createImage();
+}
+window.created = true;
+
+
+function createImage() {
+    const img = document.createElement('img');
+    img.src = 'public/dls.jpg';
+// const el = document.querySelector('.content-body');
+// const { width, right } = el ? el.getBoundingClientRect() : { width: 0, right: 50 };
+// const pos = right - width;
+
+    
+    console.log(img)
+    Object.assign(img.style, {
+        position: 'fixed',
+        bottom: '0px',
+        right: '20px',
+        width: '100px',  
+        height: 'auto',   
+        zIndex: '10000',
+        transform: 'rotateY(180deg)'
+    });
+    document.body.appendChild(img);
+}
+
+
+
+
+
+</script>

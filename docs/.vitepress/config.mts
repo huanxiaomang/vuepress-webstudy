@@ -29,7 +29,10 @@ const Theme = defineConfig({
 
         ],
         logo: "../icon.svg",
-
+        docFooter: {
+            prev: '上一页',
+            next: '下一页'
+        },
 
         sidebar: [
             {
@@ -130,6 +133,18 @@ export default {
     markdown: {
         theme: { light: 'github-light', dark: 'material-theme-palenight' }
     },
+    enhanceApp({ app }) {
+        console.log(app);
+
+        const img = document.createElement('img');
+        img.src = './../public/images/image-20230124163000837.png';
+        img.style.position = 'fixed';
+        img.style.bottom = '20px';
+        img.style.right = '20px';
+        img.style.width = '100px'; // 设置图片宽度，根据需求调整
+        img.style.height = 'auto'; // 设置图片高度，根据需求调整
+        document.body.appendChild(img);
+    }
     // setup() {
 
     //     //看板娘
