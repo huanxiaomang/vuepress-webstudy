@@ -42,7 +42,7 @@ window.created = true;
 
 function createImage() {
     const img = document.createElement('img');
-    img.src = 'public/dls.jpg';
+    img.src = '/dls.jpg';
 // const el = document.querySelector('.content-body');
 // const { width, right } = el ? el.getBoundingClientRect() : { width: 0, right: 50 };
 // const pos = right - width;
