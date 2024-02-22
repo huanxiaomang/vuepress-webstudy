@@ -76,6 +76,7 @@ const Theme = defineConfig({
                     { text: '1- git标准流程(大厂)', link: '1-git' },
                     { text: '2- typescript', link: '2-typescript入门' },
                     { text: '3- vue基础', link: '3-vue基础' },
+                    { text: '开发: Login', link: '开发-首页Login' },
 
                 ],
             },
