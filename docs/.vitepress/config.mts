@@ -1,5 +1,11 @@
 import { defineConfig } from "vitepress";
 import { useLive2d } from 'vitepress-theme-website'
+
+function getLocation() {
+    return window.location;
+}
+
+
 // https://vitepress.dev/reference/site-config
 const Theme = defineConfig({
     title: "CZ-docs",
@@ -90,6 +96,10 @@ const Theme = defineConfig({
             message: 'Released under the MIT License.',
             copyright:
                 'Copyright © 2023-present <a href="https://github.com/Depazer/depazer">创智工作室</a>'
+        },
+        editLink: {
+            pattern: 'https://github.com/huanxiaomang',
+            text: `作者：Huanxiaomang`
         },
 
 

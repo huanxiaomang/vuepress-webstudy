@@ -48,7 +48,6 @@ function createImage() {
 // const pos = right - width;
 
     
-    console.log(img)
     Object.assign(img.style, {
         position: 'fixed',
         bottom: '0px',
@@ -62,7 +61,69 @@ function createImage() {
 }
 
 
+const authorMap = {
+    'course': 'Huanxiaomang',
+    'jx': 'Huanxiaomang hakurei77',
 
+}
+
+
+const default_author = 'Huanxiaomang';
+
+const _historyWrap = function (type) {
+    const orig = history[type];
+    const e = new Event(type);
+    return function () {
+        const rv = orig.apply(this, arguments);
+        e.arguments = arguments;
+        window.dispatchEvent(e);
+        return rv;
+    };
+};
+history.pushState = _historyWrap('pushState');
+history.replaceState = _historyWrap('replaceState');
+
+window.addEventListener('pushState', function (e) {
+    handleRouteChange();
+
+});
+
+window.addEventListener('replaceState', function (e) {
+    handleRouteChange();
+
+});
+
+window.addEventListener('popstate', function (event) {
+    // 处理路由变化
+    handleRouteChange();
+});
+
+
+// 初始化页面时的路由处理
+handleRouteChange();
+
+// 处理路由变化的函数
+function handleRouteChange() {
+    // 获取当前路由
+    let currentRoute = window.location.href;
+    for (const key in authorMap) {
+        if (currentRoute.includes(key)) {
+            setAuthorText(authorMap[key]);
+        } else {
+            setAuthorText(default_author);
+        }
+    }
+
+
+}
+
+function setAuthorText(text) {
+    const btn = document.querySelector('.edit-link-button');
+
+    if (btn) {
+        btn.innerText = `作者：${text}`;
+    }
+}
 
 
 </script>
