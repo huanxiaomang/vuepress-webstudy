@@ -60,7 +60,6 @@ push之前要pull最新的过来，处理冲突
 
 
 
-
 ```bash
  git config --global user.name "用户名"
 ```
@@ -68,6 +67,114 @@ push之前要pull最新的过来，处理冲突
 
 
 
+
+
+
+——————————————————————————————————————————————————
+
+git流程（详细版）
+
+## 	1.创建远程分支
+
+​				1.进入你被邀请的项目，点击左边的 （main）
+
+![6dacbcdd17c84aa09c12e37df55756a6](C:/Users/DELL/Desktop/6dacbcdd17c84aa09c12e37df55756a6.png)
+
+​				2.点击新建分支
+
+​				3.给分支起个名字
+
+## 	2.下载代码到本地
+
+​				1.点击克隆/下载 ， 将代码下载到本地（复制到终端）
+
+![d1967a6d2ff84e888633f09c3db47e00](C:/Users/DELL/Desktop/d1967a6d2ff84e888633f09c3db47e00.png)
+
+## 	3.创建本地分支
+
+​				1.进入刚下载的文件 ， 右键选择在集成终端中打开
+
+​				2.新建分支
+
+​						终端输入
+
+```bash
+git branch //分支名	（分支名尽量和gitee里面起的一样）
+```
+
+​				3.切换分支
+
+```bash
+git checkout //分支名	（切换到新创建的分支）
+```
+
+​				4.提交代码（提交到本地）
+
+​						当修改完一些代码后
+
+![9e62c102fd0e428b9ffee97f7fd1854a](C:/Users/DELL/Desktop/9e62c102fd0e428b9ffee97f7fd1854a.png)
+
+​				5.检查是否有冲突
+
+​						1.切换到主分支
+
+```bash
+git checkout //主分支		（gitee的主分支）
+```
+
+​						2.将最新版本下载到本地
+
+```bash
+git pull
+```
+
+​									如果没问题了会出现	Already up to date.   如果有问题就接着往下做
+
+​						3.切换到自己的分支
+
+```bash
+git checkout 自己的分支
+```
+
+​						4.自己的分支与主分支进行比对
+
+```bash
+git merge origin/主分支
+```
+
+​									如果有问题，就修改一下，修改完后输入
+
+```bash
+git add .
+```
+
+​									提交
+
+​				6.上传代码
+
+​						提交到自己的分支
+
+```bash
+git push origin 自己的分支
+```
+
+## 	4.提pr ， （将你的代码提交到主分支）
+
+​				1.进入gitee仓库 ， 点击Pull Request
+
+![35380089b9bc420985d18a4d348c967c](C:/Users/DELL/Desktop/35380089b9bc420985d18a4d348c967c.png)
+
+​				2.点击新建 Pull Request
+
+​				3.将源分支切换为自己的分支
+
+​				4.提交即可
+
+## 小作业
+
+![4dc39177384948c1b92b3f43caede49b](C:/Users/DELL/Desktop/4dc39177384948c1b92b3f43caede49b.png)
+
+​		作业  ->  两人一组 ，流程走通就算完成 ，也可以自己创建两个号单人完成
 
 
 
