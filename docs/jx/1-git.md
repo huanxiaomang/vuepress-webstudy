@@ -78,7 +78,6 @@ git流程（详细版）
 
 ​				1.进入你被邀请的项目，点击左边的 （main）
 
-![6dacbcdd17c84aa09c12e37df55756a6](C:/Users/DELL/Desktop/6dacbcdd17c84aa09c12e37df55756a6.png)
 
 ​				2.点击新建分支
 
@@ -88,7 +87,6 @@ git流程（详细版）
 
 ​				1.点击克隆/下载 ， 将代码下载到本地（复制到终端）
 
-![d1967a6d2ff84e888633f09c3db47e00](C:/Users/DELL/Desktop/d1967a6d2ff84e888633f09c3db47e00.png)
 
 ## 	3.创建本地分支
 
@@ -112,7 +110,6 @@ git checkout //分支名	（切换到新创建的分支）
 
 ​						当修改完一些代码后
 
-![9e62c102fd0e428b9ffee97f7fd1854a](C:/Users/DELL/Desktop/9e62c102fd0e428b9ffee97f7fd1854a.png)
 
 ​				5.检查是否有冲突
 
@@ -162,7 +159,6 @@ git push origin 自己的分支
 
 ​				1.进入gitee仓库 ， 点击Pull Request
 
-![35380089b9bc420985d18a4d348c967c](C:/Users/DELL/Desktop/35380089b9bc420985d18a4d348c967c.png)
 
 ​				2.点击新建 Pull Request
 
@@ -172,7 +168,6 @@ git push origin 自己的分支
 
 ## 小作业
 
-![4dc39177384948c1b92b3f43caede49b](C:/Users/DELL/Desktop/4dc39177384948c1b92b3f43caede49b.png)
 
 ​		作业  ->  两人一组 ，流程走通就算完成 ，也可以自己创建两个号单人完成
 
