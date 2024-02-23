@@ -8,6 +8,7 @@ const needLoadDir = [
     'guide',
     'meetings',
     'other',
+    'jx',
 ]
 
 const imageUrl = resolve(process.cwd(), 'docs/public/images');
@@ -22,7 +23,8 @@ docs_folders.map((dir) => {
 
     mds.map((md) => {
         const content = readFileSync(resolve(__dirname, `./../docs/${dir}/${md}`)).toString();
-        let result = content.match(/(\!\[image-\d+\]\(.*\))|(<img.*src=.*alt.*zoom.*>)/gm);
+        let result = content.match(/(\!\[微信截图_\d+\]\(.*\))|(<img.*src=.*alt.*zoom.*>)/gm);    // [微信截图_xxxxxxx]
+        // let result = content.match(/(\!\[image-\d+\]\(.*\))|(<img.*src=.*alt.*zoom.*>)/gm);    // [image-xxxxxxx]
         console.log(blueBright('检查 ') + md);
         if (result !== null) {
             result.map((item) => {
@@ -34,7 +36,9 @@ docs_folders.map((dir) => {
 
             const replacedContent = result.reduce((content, img) => {
                 if (img.includes('./../public/images/')) return content;
-                const file_name = img.match(/image-\d+\.[png|jpg]+/gm)[0];
+                const file_name = img.match(/微信截图_\d+\.[png|jpg]+/gm)[0];    // [微信截图_xxxxxxx]
+                // const file_name = img.match(/image-\d+\.[png|jpg]+/gm)[0];    // [image-xxxxxxx]
+
                 const newImg = img.replace(/C:.*[png,jpg]+/gm, `./../public/images/${file_name}`);
                 content = content.replaceAll(img, newImg);
                 return content;
