@@ -68,6 +68,19 @@ const Theme = defineConfig({
                 ],
             },
             {
+                text: "JS重难题型",
+                base: "/tx/",
+                items: [
+                    { text: '0- 介绍', link: '0-介绍' },
+                    { text: '1- 树形结构转换', link: '1-树形结构转换' },
+                    { text: '2- 拖拽API', link: '2-拖拽API' },
+                    { text: '3- 二维数组小游戏', link: '3-二维数组小游戏' },
+                    { text: '4- 完美封装表单组件', link: '4-完美封装表单组件' },
+                    { text: '5- 基于正则的Parser', link: '5-基于正则的Parser' },
+
+                ],
+            },
+            {
                 text: "绩效项目实战",
                 base: "/jx/",
                 items: [
@@ -77,10 +90,16 @@ const Theme = defineConfig({
                     { text: '2- typescript', link: '2-typescript入门' },
                     { text: '3- vue3语法', link: '3-vue3语法' },
                     { text: '4- vue-router', link: '4-vue-router' },
-                    { text: '开发: Login', link: '开发-首页Login' },
+                    { text: '5- elementUI', link: '5-elementUI' },
+                    { text: '6- Promise-axios', link: '6-Promise-axios' },
+                    { text: '7- node-express', link: '7-node-express' },
+                    { text: '8- pinia', link: '8-pinia' },
+                    { text: '9- nodeJWT', link: '9-nodeJWT' },
+                    { text: '10- node中间层', link: '10-node中间层' },
 
                 ],
             },
+
             {
                 text: "其他",
                 base: "/other/",
