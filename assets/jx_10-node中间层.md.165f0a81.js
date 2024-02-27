@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as a}from"./chunks/framework.caffda30.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"jx/10-node中间层.md","filePath":"jx/10-node中间层.md","lastUpdated":1709033994000}'),o={name:"jx/10-node中间层.md"};function n(r,s,d,c,_,p){return t(),a("div")}const f=e(o,[["render",n]]);export{m as __pageData,f as default};

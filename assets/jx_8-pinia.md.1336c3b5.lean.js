@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as a}from"./chunks/framework.caffda30.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"jx/8-pinia.md","filePath":"jx/8-pinia.md","lastUpdated":1709033994000}'),n={name:"jx/8-pinia.md"};function i(r,o,s,c,p,d){return t(),a("div")}const f=e(n,[["render",i]]);export{m as __pageData,f as default};

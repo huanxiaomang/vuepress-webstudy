@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as a}from"./chunks/framework.caffda30.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"jx/5-elementUI.md","filePath":"jx/5-elementUI.md","lastUpdated":1709033994000}'),n={name:"jx/5-elementUI.md"};function r(o,s,c,m,d,l){return t(),a("div")}const i=e(n,[["render",r]]);export{_ as __pageData,i as default};
