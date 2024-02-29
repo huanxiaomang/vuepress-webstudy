@@ -197,7 +197,6 @@ define开头的函数是可以不用引入的哦
 
 ​	目标1：实现一个加法
 
-​	![微信截图_20240222232723](./../public/images/微信截图_20240222232723.png)
 
 ```vue
 <template>
@@ -218,7 +217,6 @@ function Add(){
 
 ​	目标1：实现一个对象修改
 
-​		![微信截图_20240223001008](./../public/images/微信截图_20240223001008.png)
 
 ```vue
 <template>
@@ -238,8 +236,6 @@ function Add(){
 ### 3.ref处理响应式数据		ref	(对象，数组)
 
 ​	目标1：实现一个对象修改
-
-![微信截图_20240223001008](./../public/images/微信截图_20240223001008.png)
 
 ```vue
 <template>
@@ -282,7 +278,6 @@ function Add(){
 
 ### 5.（1，2，3重难点）（数据的再赋值）ref，reactive
 
-​	![微信截图_20240223001008](./../public/images/微信截图_20240223001008.png)
 
 ​	ref
 
@@ -378,7 +373,6 @@ function Add(){
 
 ​	图例
 
-![微信截图_20240223012741](./../public/images/微信截图_20240223012741.png)
 
 ### 1.toRefs数据内全值响应化
 
@@ -443,8 +437,6 @@ function Add(){
 ### 彩蛋插入 v-model
 
 ​	打断一下，这里教大家一下数据的双向绑定v-model
-
-![微信截图_20240223020125](./../public/images/微信截图_20240223020125.png)
 
 ```vue
 <template>
@@ -537,7 +529,6 @@ let fullName = computed({
 
 ### 1.watch监视情况1 ref
 
-​	![微信截图_20240223022807](./../public/images/微信截图_20240223022807.png)
 
 ​	目标1：加到10后停止输出
 
@@ -569,7 +560,6 @@ const stopWatch = watch(number, (newValue, oldValue) => {
 
 ​	若修改整个ref定义的对象，newValue是新值，oldValue是旧值，因为不是同一个对象了
 
-![微信截图_20240223024132](./../public/images/微信截图_20240223024132.png)
 
 ​	目标1：深度监视
 
@@ -718,7 +708,6 @@ watch([temp , heigth], (Value) => {
 
 ​	目标1：实现一个水位控制器
 
-![微信截图_20240223024132](./../public/images/微信截图_20240223024132.png)
 
 ```vue
 <template>
